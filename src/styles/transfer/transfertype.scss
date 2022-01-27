@@ -1,0 +1,14 @@
+.transfer-card {
+  border: 1px solid $borderColor;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 2% 0% 2% 15%;
+  margin: 5% 0%;
+  cursor: pointer;
+  h3 {
+    margin: 2% 0%;
+  }
+  p {
+    color: #00000069;
+  }
+}

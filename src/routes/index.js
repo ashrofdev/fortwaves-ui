@@ -14,6 +14,9 @@ import New from "../pages/savings/New";
 import InvestList from "../components/investment/InvestList";
 import SavingList from "../components/savings/SavingList";
 import NewInvest from "../pages/investment/NewInvest";
+import { InvestDone } from "../pages/investment/InvestDone";
+import { FTransfer } from "../pages/transfer/FTransfer";
+import { FoTransfer } from "../pages/transfer/FoTransfer";
 
 const Router = () => {
   return (
@@ -45,7 +48,7 @@ const Router = () => {
           element={
             <Layout>
               {" "}
-              <SavingList />{" "}
+              <New />{" "}
             </Layout>
           }
         />
@@ -55,6 +58,24 @@ const Router = () => {
             <Layout>
               {" "}
               <Transfer />{" "}
+            </Layout>
+          }
+        />
+        <Route
+          path="/dashboard/transfer/f-f-transfer"
+          element={
+            <Layout>
+              {" "}
+              <FTransfer />{" "}
+            </Layout>
+          }
+        />
+        <Route
+          path="/dashboard/transfer/f-o-transfer"
+          element={
+            <Layout>
+              {" "}
+              <FoTransfer />{" "}
             </Layout>
           }
         />
